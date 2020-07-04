@@ -194,7 +194,7 @@ function NavBar() {
   $('#nav li.more').before($('#overflow > li'));
   var navItemMore = $('#nav > li.more'),
     navItems = $('#nav > li:not(.more)'),
-    navItemWidth = navItemMore.width() + 320,
+    navItemWidth = navItemMore.width() + 250,
     windowWidth = $('#nav').parent().width(),
     navOverflowWidth;
   navItems.each(function () {
@@ -237,52 +237,60 @@ $(document).ready(function () {
 
   window.addEventListener("optimizedResize", NavBar);
 
-  
-
-  // $('.home-scroll--hint').addClass('animate__flipInX')
-
   // Anchors
   $("#scrollDown").on("click", function (event) {
     event.preventDefault();
 
     const top = $('#features').offset().top
-    $('body,html').animate({scrollTop: top}, 1000);
+    $('body,html').animate({
+      scrollTop: top
+    }, 1000);
   });
   // To Features
   $("#toFeatures").on("click", function (event) {
     event.preventDefault();
 
     const top = $('#features').offset().top
-    $('body,html').animate({scrollTop: top}, 1000);
+    $('body,html').animate({
+      scrollTop: top
+    }, 1000);
   });
 
   $("#toBlog").on("click", function (event) {
     event.preventDefault();
 
     const top = $('#blog').offset().top
-    $('body,html').animate({scrollTop: top}, 1000);
+    $('body,html').animate({
+      scrollTop: top
+    }, 1000);
   });
 
   $("#toQualites").on("click", function (event) {
     event.preventDefault();
 
     const top = $('#qualites').offset().top
-    $('body,html').animate({scrollTop: top}, 1000);
+    $('body,html').animate({
+      scrollTop: top
+    }, 1000);
   });
 
   $("#toTeam").on("click", function (event) {
     event.preventDefault();
 
     const top = $('#team').offset().top
-    $('body,html').animate({scrollTop: top}, 1000);
+    $('body,html').animate({
+      scrollTop: top
+    }, 1000);
   });
 
-  
+
   $("#toContacts").on("click", function (event) {
     event.preventDefault();
 
     const top = $('#contacts').offset().top
-    $('body,html').animate({scrollTop: top}, 1000);
+    $('body,html').animate({
+      scrollTop: top
+    }, 1000);
   });
 
   //Animates section 
@@ -292,4 +300,3 @@ $(document).ready(function () {
   })
 
 })
-
