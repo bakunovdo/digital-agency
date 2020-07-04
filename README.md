@@ -19,4 +19,4 @@ It correctly bundles in production mode and optimizes the build for the best per
 The build is minified and the filenames include the hashes.
 #
 
-[Click and go to the site!](https://img-a.udemycdn.com/course/750x422/1344866_5c41.jpg)
+[Click and go to the site!](https://bakunovdo.github.io/digital-agency/)
