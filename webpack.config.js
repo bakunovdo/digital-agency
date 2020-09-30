@@ -43,7 +43,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(png|jpg|svg|ttf|eot|woff|woff2)$/i,
+                test: /\.(png|jpg|webp|svg|ttf|eot|woff|woff2)$/i,
                 use: [{
                     loader: 'file-loader',
                     options: {

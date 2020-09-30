@@ -60,11 +60,14 @@ a {
   }
 }
 
+#overflow {
+  display: block;
+}
+
 .home-wrapper {
   height: 100vh;
   width: 100%;
-  background: url("../images/header-bg.png") no-repeat center;
-  background-position: 0 100%;
+  background: url("../images/header-bg.webp") no-repeat 0 100%;
   background-size: cover;
 
   .home-bar {
@@ -72,10 +75,10 @@ a {
   }
 
   .home-bar::after {
-    content: "";
+    //content: "";
     position: absolute;
     width: 100%;
-    bottom: 0px;
+    bottom: 0;
     border-bottom: 1px solid rgba($color: #ebebeb, $alpha: 0.4);
   }
 }
@@ -138,7 +141,6 @@ a {
     margin-left: auto;
 
     li {
-      display: flex;
       align-items: center;
       justify-content: center;
       display: block;
@@ -299,6 +301,7 @@ nav .more {
     &--hint {
       @include fontGothamBook(15px);
       padding-bottom: 25px;
+      margin: 0 20px;
     }
 
     &--circle {
@@ -755,6 +758,7 @@ textarea {
   }
 
   &__form {
+    padding: 0 40px;
     display: flex;
     flex-direction: column;
 
@@ -790,7 +794,6 @@ textarea {
     }
 
     &:active {
-      background: green;
       box-shadow: 0 6px 18px 0 rgba(#000, 0.1);
       color: $primary-color;
       background-color: #fff;
